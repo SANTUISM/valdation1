@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="W3.css">
+    <title>grade</title>
+    <script>
+        function grade() {
+            var grd = document.getElementById('num').value;
+
+            if ((grd >= 80) && (grd<= 100 )) {
+                alert("You are merit");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="w3-container  w3-row-padding w3-auto w3-display-container w3-text-white w3-red" style="height: auto; width: auto; ">
+        <div class="w3-padding-16 w3-margin w3-large w3-auto  w3-block" style="height: auto; width: auto; ">
+          <form class="w3-contaner" action="#" method="post" name="grade" onsubmit="return grade()">
+            <input type="text" name="num1" id="num" placeholder="Type number" class="w3-input w3-margin w3-padding w3-text-white" style="background-color: transparent; outline: none;"><br><br>
+            <button type="submit" class="w3-btn w3-hover-pale-yellow w3-right w3-margin w3-padding">SUBMIT</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
